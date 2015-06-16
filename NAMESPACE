@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(sfsmisc,digitsBase)
+importFrom(tseries,jarque.bera.test)
+importFrom(kSamples,ad.test)
+importFrom(MissMech,AndersonDarling)
+importFrom(copula,Stirling2)
+importFrom(LambertW,W)
