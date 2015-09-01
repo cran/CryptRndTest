@@ -1,9 +1,5 @@
-random.walk.tests <-
-function(x,B=64,Excursion=TRUE,Expansion=TRUE,Height=TRUE,alpha=0.05){
-# B is used sequence length. If Excursion is TRUE, B takes 16, 32, 64, 128, and 256.
-# If Expansion is TRUE, B takes 64, 128, 256, 512, and 1024. If Height is TRUE, B takes 32, 64, and 128. 
-# If the length of data is not a multiple of B, it will be trimmed from right to do so.  
-  
+random.walk.tests=function(x,B=64,Excursion=TRUE,Expansion=TRUE,Height=TRUE,alpha=0.05){
+ 
   data=as.vector(x)
   
   if ((length(data)%%B)!=0){

@@ -1,17 +1,10 @@
-KSADCHRY <-
-function(e,tip,B,alpha){ 
-# Kolmogorov-Smirnov test for random walk tests
-# tip is equal to 1 for Excursion test, 2 for Expansion test, and 3 for Height test  
-# alpha is the predetermined level of significance   
-  
-# x ile veri ham olarak gelecek ve asagida dagilim fonksiyonuna donusecek
-# testin yapilmasi icin uretilen toplam rasgele dizi sayisi: dagilim fonksiyonunda bolum
-  
-	M=length(e)
+KSADCHRY=function(e,tip,B,alpha){ 
+ 
+  M=length(e)
   Ff=0
 	observed=0	
 	expected=0
- 	if (tip==1){
+    if (tip==1){ #Excursion test
 		if (B==16){	
 			Ff[1]=.196
 			Ff[2]=.392
@@ -67,7 +60,7 @@ function(e,tip,B,alpha){
 			observed[5]=observed[4]+sum((e[]>=20))/M
 		}	
 	} else if (tip==2){
-		if (B==64){
+        if (B==64){ #Height test
 			Ff[1]=0.252
 			Ff[2]=0.479
 			Ff[3]=0.661
@@ -123,7 +116,7 @@ function(e,tip,B,alpha){
 			observed[4]=observed[3]+sum((e[]>=41) & (e[]<=52))/M
 			observed[5]=observed[4]+sum((e[]>=53))/M
          	}
-	} else if (tip==3){
+    } else if (tip==3){ #Expansion
 		if (B==32){
 			Ff[1]=0.307
 			Ff[2]=0.473
@@ -160,10 +153,9 @@ function(e,tip,B,alpha){
 
 	N=length(Ff)
 	
-	#Burada AD test icin F gibi dagilan bir kitleden e'nin uzunlugu kadar veri gretip dagilim uyumunu karsilastiriyorum.
 	expected2=0
 	expected2=round(Ff*2000)
-  obs=0
+    obs=0
 	obs2=0
 	obs2=round(observed*2000)
 	obs[1]=obs2[1]
@@ -174,13 +166,13 @@ function(e,tip,B,alpha){
 	}
 	
 
- 	z=rep(0:(length(expected)-1),expected) #expected'in icindeki kadar sifir, bir vs yaziyor
+ 	z=rep(0:(length(expected)-1),expected)
  	e=rep(0:(length(obs)-1),obs) 
   
 	test=kSamples::ad.test(e,z=z,method="simulated",dist=FALSE,Nsim=1000)
 	ADtest=test$ad
 	if (ADtest[1,3]<alpha){ 
-		sonucAD=0 #H0 ret
+		sonucAD=0
 	}
 	else
 	{ 
@@ -193,7 +185,7 @@ function(e,tip,B,alpha){
 	KStest[2]=test2$p.value
 
 	if (KStest[2]<alpha){ 
-		sonucKS=0 #H0 ret
+		sonucKS=0
 	}
 	else
 	{ 
@@ -204,7 +196,7 @@ function(e,tip,B,alpha){
 	KKtest[1]=sum(((obs-expected)^2)/expected)
   KKtest[2]=1-pchisq(KKtest[1],N-1)
 	if (KKtest[2]<alpha){ 
-	  sonucKK=0 #H0 ret
+	  sonucKK=0 
 	}
 	else
 	{ 

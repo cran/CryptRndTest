@@ -1,10 +1,5 @@
 birthday.spacings <-
 function(x,m=128,n=2^16,alpha=0.05,lambda,num.class=10){
-# x includes all data sets of length m in a row vector. For example, the length of data would be m*500 
-#     meaning that we have 500 data sets of length m.  
-# m is the number of birthdays
-# n is the length of year  
-  
   bds=dogumGunuAraliklari(x,m)
   
   testDGA=KSADdga(bds$ee,alpha,n,m,lambda,num.class=num.class)

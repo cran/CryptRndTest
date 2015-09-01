@@ -5,7 +5,7 @@
 Stirling Number of The Second Kind
 }
 \description{
-Asymptotically computes natural logarithm of Stirling numbers of the second kind for large values of inputs by the approach of Bleick and Wang (1954) and Temme (1993). For small or moderate values of inputs, this function is not as precise as avaliable functions.
+Asymptotically computes natural logarithm of Stirling numbers of the second kind for large values of inputs by the approach of Bleick and Wang (1954) and Temme (1993). For small or moderate values of inputs, this function is not as precise as available functions.
 }
 \usage{
 Strlng2(n, k, log = TRUE)
@@ -41,20 +41,20 @@ Maintainer: Haydar Demirhan <haydarde@hacettepe.edu.tr>
 }
 
 \seealso{
-See also \code{Stirling} function from the package \pkg{copula}.
+See also \code{Stirling2} function from the package \pkg{copula}.
 }
 \examples{
 # When n = 10 and k = 4, exact value is 34105
-copula::Stirling2(10,4)           # Works well.
+gmp::Stirling2(10,4)           
 Strlng2(10,4,log=FALSE)
 # ---- Moderate values of n and k ----
 # When n = 30 and k = 20, exact value is 581535955088511150
-log(581535955088511150)-log(copula::Stirling2(30,20))
-log(581535955088511150)-Strlng2(30,20,log=TRUE)  # Works well.
+log(581535955088511150)-log(gmp::Stirling2(30,20))
+log(581535955088511150)-Strlng2(30,20,log=TRUE)  
 # ---- Large values of n and k ----
-copula::Stirling2(500,40)         
-Strlng2(500,40,log=TRUE)  # Works better.
+gmp::Stirling2(50,10)
+Strlng2(50,10,log=FALSE) 
 }
 
-\keyword{ ~approximation }
-\keyword{ ~large factorials }
+\keyword{approximation }
+\keyword{large factorials }

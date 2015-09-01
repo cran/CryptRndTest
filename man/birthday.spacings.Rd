@@ -5,7 +5,7 @@
 Birthday Spacings Test
 }
 \description{
-Perfoms Birthday Spacings test of Marsaglia and Tsang (2002) to evaluate the randomess of an RNG. The Kolmogorov-Smirnov, Anderson-Darling, and Chi-Square tests are applied as goodness-fit-tests. 
+Performs Birthday Spacings test of Marsaglia and Tsang (2002) to evaluate the randomness of an RNG. The Kolmogorov-Smirnov, Anderson-Darling, and Chi-Square tests are applied as goodness-of-fit tests. 
 }
 \usage{
 birthday.spacings(x, m = 128, n = 2^16, alpha = 0.05, lambda, num.class = 10)
@@ -28,7 +28,7 @@ birthday.spacings(x, m = 128, n = 2^16, alpha = 0.05, lambda, num.class = 10)
      mean of Poisson distribution that constitutes theoretical cumulative distribution function in goodness-of-fit tests. See Details section.
 }
   \item{num.class}{
-     number of classes in the constructed frequency table for goodnees-of-fit testing. 
+     number of classes in the constructed frequency table for goodness-of-fit testing. 
 }
 }
 \details{
@@ -36,7 +36,7 @@ This is one of the "difficult to pass tests" that RNG's that are able to pass th
 
 To conduct the test, \eqn{m} birthdays are randomly chosen from a year composed of \eqn{n} days. When the birthdays are sorted, asymptotic distribution of the number of duplicated values among the spacings between birthdays is Poisson with mean \eqn{\lambda=m^3/(4n)}. For most of the cases, this formula for \code{lambda} is useful. However, user should check suitability of the value entered for \code{lambda}. Note that some suitable values for \eqn{m} and \eqn{n} are given by Marsaglia and Tsang (2002).
 
-The argument \code{num.class} should be increased along with increasng bit-length. It can be set to 5 for tesing with 8-bit and to 10 for testing with 16-bit and higher.
+The argument \code{num.class} should be increased along with increasing bit-length. It can be set to 5 for testing with 8-bit and to 10 for testing with 16-bit and higher.
 }
 \value{
 \item{AD.statistic}{
@@ -91,9 +91,9 @@ print(test)
 
 }
 
-\keyword{ ~Anderson-Darling }
-\keyword{ ~Kolmogorov-Smirnov }
-\keyword{ ~Chi-Square }
-\keyword{ ~nonparametric }
-\keyword{ ~goodness-of-fit test }
-\keyword{ ~randomness test }
+\keyword{Anderson-Darling }
+\keyword{Kolmogorov-Smirnov }
+\keyword{Chi-Square }
+\keyword{nonparametric }
+\keyword{goodness-of-fit test }
+\keyword{randomness test }
