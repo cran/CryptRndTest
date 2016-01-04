@@ -44,7 +44,7 @@ if \code{TRUE}, randomness test is applied over the value of greatest common div
      the standard deviation of theoretical normal distribution that the number of required iterations follows.
 }
   \item{alpha}{
-     a predetermined value of type-I error with the default value of 0.05.
+     a predetermined value of significance level with the default value of 0.05.
 }
 }
 \details{
@@ -105,8 +105,9 @@ x[,2]=round(runif(k,0,(2^B-1)))
 mu=8.8772
 sd=2.38282
 alpha = 0.05
-
-
+test=GCD.test(x,B=B,KS=TRUE,CSQ=TRUE,AD=TRUE,JB=TRUE,
+              test.k=TRUE,test.g=TRUE,mu=mu,sd=sd,alpha=alpha)
+print(test)
 
 }
 \keyword{Anderson-Darling }

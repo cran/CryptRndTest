@@ -19,7 +19,7 @@ topological.binary(x, B, alpha = 0.05, critical.value)
     the length of words (B-bit).
 }
   \item{alpha}{
-    a predetermined value of type-I error with the default value of 0.05.
+    a predetermined value of significance level with the default value of 0.05.
 }
   \item{critical.value}{
     a value used to decide whether to reject the null hypothesis at the significance level of \code{alpha}. See details for further information.

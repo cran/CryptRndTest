@@ -22,7 +22,7 @@ birthday.spacings(x, m = 128, n = 2^16, alpha = 0.05, lambda, num.class = 10)
      the length of year.
 }
   \item{alpha}{
-     a predetermined value of type-I error with the default value of 0.05.
+     a predetermined value of significance level with the default value of 0.05.
 }
   \item{lambda}{
      mean of Poisson distribution that constitutes theoretical cumulative distribution function in goodness-of-fit tests. See Details section.

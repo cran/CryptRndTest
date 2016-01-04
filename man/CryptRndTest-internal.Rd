@@ -6,6 +6,19 @@
 \alias{Random.walk.D}
 \alias{Random.walk.G}
 \alias{dogumGunuAraliklari}
+\alias{adaptive.chi.square.default}
+\alias{adaptive.chi.square.main}
+\alias{birthday.spacings.default}
+\alias{birthday.spacings.main}
+\alias{book.stack.default}
+\alias{book.stack.main}
+\alias{GCD.test.default}
+\alias{GCD.test.main}
+\alias{random.walk.tests.default}
+\alias{random.walk.tests.main}
+\alias{topological.binary.default}
+\alias{topological.binary.main}
+\alias{check}
 
 \title{
 Functions for internal use only

@@ -6,7 +6,7 @@ Random.walk.G=function(a,B){
   S=0
   b=1-2*a
 
-  e=array(0,floor(N/B)) 
+    e=array(0,floor(N/B)) 
 	for (j in 1:floor(N/B)){
 
 		maks=0
