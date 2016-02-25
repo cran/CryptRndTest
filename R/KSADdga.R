@@ -1,3 +1,53 @@
+#' @importFrom stats ks.test
+#' @importFrom stats chisq.test
+#' @importFrom stats dpois
+#' @importFrom stats pchisq
+#' @importFrom stats rnorm
+#' @importFrom stats runif
+#' @importFrom parallel parLapply
+#' @importFrom parallel clusterExport
+#' @importFrom parallel setDefaultCluster
+#' @importFrom parallel stopCluster
+#' @importFrom parallel makePSOCKcluster
+#' @importFrom Rmpfr mpfrArray
+#' @importFrom Rmpfr mpfr
+#' @importFrom gmp Stirling2
+#' @importFrom LambertW W
+#' @importFrom MissMech AndersonDarling
+#' @importFrom kSamples ad.test
+#' @importFrom tseries jarque.bera.test
+#' @importFrom sfsmisc digitsBase
+#' @importFrom methods new
+#' @importFrom utils write.table
+
+#' @S3method adaptive.chi.square default
+#' @S3method birthday.spacings default
+#' @S3method book.stack default
+#' @S3method GCD.test default
+#' @S3method random.walk.tests default
+#' @S3method topological.binary default
+#' @S3method adaptive.chi.square main
+#' @S3method birthday.spacings main
+#' @S3method book.stack main
+#' @S3method GCD.test main
+#' @S3method random.walk.tests main
+#' @S3method topological.binary main
+#' @S3method print CryptRndTest
+
+#' @export adaptive.chi.square
+#' @export birthday.spacings
+#' @export book.stack
+#' @export GCD.test
+#' @export random.walk.tests
+#' @export topological.binary
+#' @export GCD
+#' @export GCD.big
+#' @export GCD.q
+#' @export Strlng2
+#' @export TBT.criticalValue
+#' @export toBaseTen
+#' @export toBaseTwo
+
 KSADdga=function(e,alfa,n,m,lambda,num.class=10){
 	z=0
 	expected=0

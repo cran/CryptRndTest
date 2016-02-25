@@ -1,5 +1,5 @@
-89ff16fe4b2d24a05939a1041d6e21b6 *DESCRIPTION
-0963ce0eccb698dace2a13f4c2374f5f *NAMESPACE
+03199ba4455b989c8d367957783882d4 *DESCRIPTION
+035b07521282a5dcbd699cf539f54f18 *NAMESPACE
 a932de32fc9531dc82b578764ed2a871 *R/GCD.R
 1b7c36ec62dbbabfecd8a2f51a23ac7b *R/GCD.big.R
 991a5fdabd63162144bf066ae0239952 *R/GCD.q.R
@@ -7,7 +7,7 @@ a932de32fc9531dc82b578764ed2a871 *R/GCD.R
 a9c19cd33bb198ae37669ed3d8a44bbb *R/GCD.test.default.R
 39ca022cbc9abbd5e6b125cb5f31e925 *R/GCD.test.main.R
 1d0b330f6fbf6df7cede853d1654702d *R/KSADCHRY.R
-4b1f39183e0f932064e57c0e776e5489 *R/KSADdga.R
+952870448e5ef997b933db99ba4402d8 *R/KSADdga.R
 674b384db89264e1cd498000c1bf4cac *R/Random.walk.D.R
 49b1ffdad04d96463b6e7fbdd2e509ae *R/Random.walk.G.R
 44c5acbbf64b2ce7a6185ea1cfde1b75 *R/Random.walk.Y.R
@@ -33,8 +33,12 @@ d4d7cf67230cf1eeaf304922e40e53d4 *R/random.walk.tests.main.R
 a32856d16ca0bc9115ff315de240a8b0 *R/topological.binary.R
 e2c3869bc7ac9778cc91f540ca626a02 *R/topological.binary.default.R
 eeff0d1eb017d5816107be7adb6fa1e6 *R/topological.binary.main.R
+3f96c953126dc511038657340491a670 *build/vignette.rds
+a081c6107dbe788e69580164ba1c7368 *inst/doc/CryptRndTest.R
+93b0ef894967133ed0427fd90611779c *inst/doc/CryptRndTest.ltx
+1397244805ae6826ae8e4f3515e33aab *inst/doc/CryptRndTest.pdf
 9b78c028ccdde86a855a1044e308045d *man/CryptRndTest-internal.Rd
-8417e8482197942e52749537d0abb273 *man/CryptRndTest-package.Rd
+61329ef5035a31d2c475e5981b84307a *man/CryptRndTest-package.Rd
 46426b0a1c9aa431340b333f7a425b58 *man/GCD.Rd
 1dd353fe833e9128ba46aa48971c781c *man/GCD.big.Rd
 1349f0f5ed2ad37201f883d75b3c06d0 *man/GCD.q.Rd
@@ -49,3 +53,6 @@ ed00fe05150d9001fcbb4f69ff04419b *man/birthday.spacings.Rd
 0f3a9dc2818890821b8f6c0ff1a1062d *man/toBaseTen.Rd
 cdd3c1619aeec3a159da599e83cc4008 *man/toBaseTwo.Rd
 f8273920ea3772dd41a149405b8315e7 *man/topological.binary.Rd
+fd29af2a7284e285bc7fd559dadabfbb *vignettes/CryptRndTest.ltx
+8466d084a9513a46d715c12f678763c4 *vignettes/RJournal.sty
+c2519c816a850199cc2b2f70bfd65909 *vignettes/demirhan_Crypt_2015.bib
