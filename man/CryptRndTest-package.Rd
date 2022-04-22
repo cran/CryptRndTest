@@ -12,8 +12,8 @@ Performs cryptographic randomness tests on a sequence of random integers or bits
 \tabular{ll}{
 Package: \tab CryptRndTest\cr
 Type: \tab Package\cr
-Version: \tab 1.2.1\cr
-Date: \tab 2015-12-24\cr
+Version: \tab 1.2.7\cr
+Date: \tab 2022-04-20\cr
 License: \tab GPL-3\cr
 }
 To test statistical randomness of cryptographic randomness use functions \code{birthday.spacings} and \code{GCD.test} for testing sequences of integers, functions \code{adaptive.chi.square} and \code{book.stack} for testing sequences of integers or bits, and use functions \code{random.walk.tests} and \code{topological.binary} for testing sequences of bits. The function \code{random.walk.tests} performs random walk-excursion, random walk-expansion, and random walk-height tests.
@@ -23,13 +23,13 @@ Additionally, use the function \code{GCD.q} to compute greatest common divisor (
 \author{
 Haydar Demirhan
 
-Maintainer: Haydar Demirhan <haydarde@hacettepe.edu.tr>
+Maintainer: Haydar Demirhan <haydar.demirhan@rmit.edu.au>
 }
 \note{\bold{Acknowledgement:} The package \pkg{CryptRndTest} is based upon work supported by The Scientific and Technological Research Council of Turkey (TUBITAK) under Grant No. 114F249 of ARDEB-3001 grant.
 }
 \references{
 
-Alcover, P.M., Guillamon, A., Ruiz, M.C., A new randomness test for bit sequences. Informatica  (2013), 24(3), 339--356.  
+Alcover, P.M., Guillamon, A., Ruiz, M.C., A new randomness test for bit sequences. Informatica  (2013), 24(3), 339--356.
 
 Bleick, W.W., Wang, P.C.C., Asymptotics of Stirling Numbers of the Second Kind. Proceedings of the American Mathematical Society (1974), 42(2), 575--580.
 
@@ -44,7 +44,7 @@ Ryabko, B.Ya., Stognienko, V.S., Shokin Yu.I., A new test for randomness and its
 Temme, N.M., Asymptotic estimates of Stirling numbers. Studies in Applied Mathematics (1993), 89, 233--243.
 }
 
-\keyword{ Anderson-Darling, chi-Square, goodness-of-fit test, greatest common divisor, Stirling numbers of the second kind, Jarque-Bera, Kolmogorov-Smirnov, nonparametric,  randomness test}
+\concept{Anderson-Darling} \concept{chi-Square} \concept{goodness-of-fit test} \concept{greatest common divisor} \concept{Stirling numbers of the second kind} \concept{Jarque-Bera} \concept{Kolmogorov-Smirnov} \concept{nonparametric} \concept{randomness test}
 
 \seealso{
 \code{\link[CryptRndTest]{adaptive.chi.square}}, \code{\link[CryptRndTest]{birthday.spacings}}, \code{\link[CryptRndTest]{book.stack}}, \code{\link[CryptRndTest]{GCD.test}}, \code{\link[CryptRndTest]{GCD}}, \code{\link[CryptRndTest]{GCD.q}}, \code{\link[CryptRndTest]{GCD.big}}, \code{\link[CryptRndTest]{random.walk.tests}}, \code{\link[CryptRndTest]{topological.binary}}, \code{\link[CryptRndTest]{Strlng2}}, \code{\link[copula]{Stirling2}}
